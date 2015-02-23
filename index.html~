@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ProgramIIEST - Programmers' Symposium</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Creative CSS3 Animation Menus" />
+        <meta name="keywords" content="menu, navigation, animation, transition, transform, rotate, css3, web design, component, icon, slide" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style9.css" />
+        <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
+	<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+	<script>
+var currently_selected = "desc_div1";
+$(function()
+{
+     $("a#ca1").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div1").slideToggle();
+	 currently_selected = "desc_div1";
+         return false;
+     }); 
+
+     $("a#ca2").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div2").slideToggle();
+	 currently_selected = "desc_div2";
+         return false;
+     }); 
+     $("a#ca3").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div3").slideToggle();
+	 currently_selected = "desc_div3";
+         return false;
+     }); 
+     $("a#ca4").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div4").slideToggle();
+	 currently_selected = "desc_div4";
+         return false;
+     }); 
+     $("a#event1").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div5").slideToggle();
+	 currently_selected = "desc_div5";
+         return false;
+     }); 
+     $("a#event2").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div6").slideToggle();
+	 currently_selected = "desc_div6";
+         return false;
+     }); 
+     $("a#event3").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div7").slideToggle();
+	 currently_selected = "desc_div7";
+         return false;
+     }); 
+
+     $("a#ldiv1").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div5").slideToggle();
+	 currently_selected = "desc_div5";
+         return false;
+     }); 
+     $("a#ldiv2").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div6").slideToggle();
+	 currently_selected = "desc_div6";
+         return false;
+     }); 
+     $("a#ldiv3").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div7").slideToggle();
+	 currently_selected = "desc_div7";
+         return false;
+     }); 
+var hide_me_flag = true;
+     $("a#hide_me_controller").click(function()
+     {
+         $("#hide_me").slideToggle();
+	 if(hide_me_flag){
+		hide_me_flag = false;	
+		$("#hide_me_controller").html("Less");
+	 }
+	 else{
+		hide_me_flag = true;
+		$("#hide_me_controller").html("Learn More");
+	 }
+         return false;
+     }); 
+});
+	</script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+               <!-- <a href="http://tympanus.net/Tutorials/BlurMenu/"><strong>&laquo; Previous Demo: </strong>Blur Menu</a>
+                <span class="right">
+                    <a href="http://www.justbenicestudio.com/studio/websymbols/" target="_blank">Font/Icons by Just Be Nice</a>
+                    <a href="http://tympanus.net/codrops/2011/10/24/creative-css3-animation-menus/"><strong>Back to the Codrops Article</strong></a>
+                </span>-->
+                <div class="clr"></div>
+            </div>
+	    <div class="top_header">
+             	<!--<h1>Creative CSS3 Animation Menus <span>Experimenting with CSS3 Transitions &amp; Animations</span></h1>-->
+	    </div>
+            <div class="content" id="content">
+
+		<div class="menu_container">
+                <ul class="ca-menu">
+                    <li>
+                        <a id="ca1" href="#">
+                            <span class="ca-icon" id="ca-icon1"></span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Home</h2>
+                                <h3 class="ca-sub">ProgramIIEST Home</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="ca2" href="#">
+                            <span class="ca-icon" id="ca-icon2"></span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Events</h2>
+                                <h3 class="ca-sub">Have a BLAST...</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="ca3" href="#">
+                            <span class="ca-icon" id="ca-icon3"></span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Rewards</h2>
+                                <h3 class="ca-sub">Programmers Win</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="ca4" href="#">
+                            <span class="ca-icon" id="ca-icon4"></span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Contact Us</h2>
+                                <h3 class="ca-sub">We Are Always Here</h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+		</div>
+                <div class="more" id="desc_div1">
+                   <!-- <ul>
+                        <li><a href="index.html">Example 1</a></li>
+                        <li><a href="index2.html">Example 2</a></li>
+                        <li><a href="index3.html">Example 3</a></li>
+                        <li><a href="index4.html">Example 4</a></li>
+                        <li><a href="index5.html">Example 5</a></li>
+                        <li><a href="index6.html">Example 6</a></li>
+                        <li><a href="index7.html">Example 7</a></li>
+                        <li><a href="index8.html">Example 8</a></li>
+                        <li class="selected"><a href="index9.html">Example 9</a></li>
+                        <li><a href="index10.html">Example 10</a></li>
+                    </ul>-->
+			<div class="inner_more">CODE, DESIGN, HACK, ENJOY</div>
+<h1><span><p>The Bengal Engineering and Science University, Shibpur and Instruo'14 would like to bring you the “ProgramIIEST”, a symposium of programmers and designers, powered by Mozilla, on 28-29 March, 2014 at BESU, Shibpur. <a href="#" id="hide_me_controller" style="color:purple;text-decoration:underline;">Learn More</a></p> <div class="hide_me" id="hide_me">Come, learn, hack and create something new. Hang out with other coders and designers, discuss new ideas, get your questions answered.We are open to anyone from students to professionals, who would like to take some time off their daily life by making something fun and possibly win some great prizes. If you consider yourself a programmer let people call you a 'programiiest'</div>			
+			<div class="button">
+				<a href="http://bit.ly/1ppzUDo" target="_blank">Register Here</a>
+			</div><span></h1>
+                </div>
+                <div class="more" id="desc_div2" style="height:0px;">
+			<a id="event1" href="#">
+				<div class="inner_more">PROGRAMMING IN RUST</div>
+			</a>
+			<a id="event2" href="#">
+				<div class="inner_more1">OPEN BADGE DESIGN HACK</div>
+			</a>
+			<a id="event3" href="#">
+				<div class="inner_more2">PERSONA HACK</div>
+			</a>
+			<div class="inner_more1">MORE COMING SOON...</div>
+                    <!--<ul>
+                        <li><a href="index.html">Example 1</a></li>
+                        <li><a href="index2.html">Example 2</a></li>
+                        <li><a href="index3.html">Example 3</a></li>
+                        <li><a href="index4.html">Example 4</a></li>
+                        <li><a href="index5.html">Example 5</a></li>
+                        <li><a href="index6.html">Example 6</a></li>
+                        <li><a href="index7.html">Example 7</a></li>
+                        <li><a href="index8.html">Example 8</a></li>
+                        <li class="selected"><a href="index9.html">Example 9</a></li>
+                        <li><a href="index10.html">Example 10</a></li>
+                    </ul>-->
+                </div>
+			
+		<div class="more" id="desc_div5">
+			<div class="inner_more">PROGRAMMING IN RUST</div>
+			<h1><span>Rust is a general purpose, multi-paradigm, compiled programming language developed by Mozilla Research. The track is comprised of a workshop on RUST, followed by a series of programming contests. So  prepare yourself for solving various kinds of programming challenges of varying difficulty in RUST and compete against other coders, gain recognition and win attractive prizes. 
+<br/>Event Details:<br/>
+ 28th March, 2014: A workshop will be held on RUST. Here you will get to learn RUST from proficient RUST programmer. It will be followed by a practice session, which will make you proficient in RUST programming.<br/>     
+29th March, 2014: Programming Contest in RUST. </br> 
+
+**Attractive prizes to be won.</span></h1>
+			<div class="lower_div">
+				<a id="ldiv1" href="#">
+				<div class="lower_div1">
+					PROGRAMMING IN RUST
+				</div>
+				</a>
+				<a id="ldiv2" href="#">
+				<div class="lower_div2">
+					OPEN BADGE DESIGN HACK
+				</div>
+				</a>
+				<a id="ldiv3" href="#">
+				<div class="lower_div3">
+					PERSONA HACK
+				</div>
+				</a>
+				<a id="ldiv4" href="#">
+				<div class="lower_div4">
+					MORE COMING SOON...
+				</div>
+				</a>
+			</div>
+		</div>
+		<div class="more" id="desc_div6">
+			<div class="inner_more1">OPEN BADGE DESIGN HACK</div>
+			<h1><span>Mozilla Open Badges is a free software and an open technical standard any organization can use to create, issue and verify digital badges. So designers and developers, we invite you to “Open Badge Design Hack”. Learn creating new badges, create new badge, get recognition and win attractive prizes. Maybe, next time, you will see Mozilla using your badge..;)
+<br/>
+  Event Track:<br/>
+28th March, 2014: A session on Open Badge Badge Design.<br/>
+29th March, 2014: Open Badges Design Hacktahon. You will be provided the tools required for designing badges. You will have to design and develop an open badge within a fixed time.</br>
+
+**Attractive prizes to be won.</span></h1>
+			<div class="lower_div">
+				<a id="ldiv1" href="#">
+				<div class="lower_div1">
+					PROGRAMMING IN RUST
+				</div>
+				</a>
+				<a id="ldiv2" href="#">
+				<div class="lower_div2">
+					OPEN BADGE DESIGN HACK
+				</div>
+				</a>
+				<a id="ldiv3" href="#">
+				<div class="lower_div3">
+					PERSONA HACK
+				</div>
+				</a>
+				<a id="ldiv4" href="#">
+				<div class="lower_div4">
+					MORE COMING SOON...
+				</div>
+				</a>
+			</div>
+		</div>
+		<div class="more" id="desc_div7">
+			<div class="inner_more">PERSONA HACK</div>
+			<h1><span>Persona is a sign-in system developed by Mozilla. Mozilla believes your online life is your business. With that in mind, Mozilla created Persona to make it easier to sign in to websites. Do you believe it? If yes, join us at “Persona Hack” contest and show your imagination and skills and build new web-apps using Persona. Show us if you believe what Mozilla believes.<br/>
+
+Event Track:<br/>
+28th March, 2014: Session on Persona, its implementation and application<br/>
+29th March, 2014: Persona Hack- build website or web-app using Persona. Show your skill, implement new idea and win cool prizes.<br/>
+
+**Attractive prizes to be won.</span></h1>
+			<div class="lower_div">
+				<a id="ldiv1" href="#">
+				<div class="lower_div1">
+					PROGRAMMING IN RUST
+				</div>
+				</a>
+				<a id="ldiv2" href="#">
+				<div class="lower_div2">
+					OPEN BADGE DESIGN HACK
+				</div>
+				</a>
+				<a id="ldiv3" href="#">
+				<div class="lower_div3">
+					PERSONA HACK
+				</div>
+				</a>
+				<a id="ldiv4" href="#">
+				<div class="lower_div4">
+					MORE COMING SOON...
+				</div>
+				</a>
+			</div>
+		</div>
+
+                <div class="more" id="desc_div3">
+			<div class="inner_more">PRIZES FOR WINNERS</div>
+			<h1><span>Surprise!! Surprise!!! Surprise!!!!...</span></h1>
+                    <!--<ul>
+                        <li><a href="index.html">Example 1</a></li>
+                        <li><a href="index2.html">Example 2</a></li>
+                        <li><a href="index3.html">Example 3</a></li>
+                        <li><a href="index4.html">Example 4</a></li>
+                        <li><a href="index5.html">Example 5</a></li>
+                        <li><a href="index6.html">Example 6</a></li>
+                        <li><a href="index7.html">Example 7</a></li>
+                        <li><a href="index8.html">Example 8</a></li>
+                        <li class="selected"><a href="index9.html">Example 9</a></li>
+                        <li><a href="index10.html">Example 10</a></li>
+                    </ul>-->
+                </div>
+                <div class="more" id="desc_div4">
+			<div class="inner_more">CONTACT US</div>
+			<h1 style="float:left;"><span>For suggestions feedback or other queries mail us at<br/><a href="mailto:programiiest@students.becs.ac.in" style="color: purple;">programiiest@students.becs.ac.in</a><br/><br/>Avik Pal<br/><a href="mailto:avikpal@students.becs.ac.in" style="color: purple;">avikpal@students.becs.ac.in</a><br/>Mob. No. : +91-9433146888</span></h1>
+			<h1 style="float:right;"><span>Gaurab Patra<br/><a href="mailto:patrox@students.becs.ac.in" style="color: purple;">patrox@students.becs.ac.in</a><br/>Mob. No. : +91-9874975638<br/><br/>
+Subhasish Kundu<br/><a href="mailto:skunducst25@students.becs.ac.in" style="color: purple;">skunducst25@students.becs.ac.in</a><br/>Mob. No. : +91-8902267493</span></h1>
+                    
+                </div>
+
+
+
+            </div><!-- content -->
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    </body>
+</html>
