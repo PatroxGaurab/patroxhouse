@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>PATROXHOUSE - Weird Living</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Creative CSS3 Animation Menus" />
+        <meta name="keywords" content="menu, navigation, animation, transition, transform, rotate, css3, web design, component, icon, slide" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
+	<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+	<script>
+var currently_selected = "desc_div1";
+$(function()
+{
+     $("a#ca1").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div1").slideToggle();
+	 currently_selected = "desc_div1";
+         return false;
+     });
+
+     $("a#ca2").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div2").slideToggle();
+	 currently_selected = "desc_div2";
+         return false;
+     });
+     $("a#ca3").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div3").slideToggle();
+	 currently_selected = "desc_div3";
+         return false;
+     });
+     $("a#ca4").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div4").slideToggle();
+	 currently_selected = "desc_div4";
+         return false;
+     });
+     $("a#event1").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div5").slideToggle();
+	 currently_selected = "desc_div5";
+         return false;
+     });
+     $("a#event2").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div6").slideToggle();
+	 currently_selected = "desc_div6";
+         return false;
+     });
+     $("a#event3").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div7").slideToggle();
+	 currently_selected = "desc_div7";
+         return false;
+     });
+
+     $("a#ldiv1").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div5").slideToggle();
+	 currently_selected = "desc_div5";
+         return false;
+     });
+     $("a#ldiv2").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div6").slideToggle();
+	 currently_selected = "desc_div6";
+         return false;
+     });
+     $("a#ldiv3").click(function()
+     {
+         $("#"+currently_selected).slideToggle();
+         $("#desc_div7").slideToggle();
+	 currently_selected = "desc_div7";
+         return false;
+     });
+var hide_me_flag = true;
+     $("a#hide_me_controller").click(function()
+     {
+         $("#hide_me").slideToggle();
+	 if(hide_me_flag){
+		hide_me_flag = false;
+		$("#hide_me_controller").html("Less");
+	 }
+	 else{
+		hide_me_flag = true;
+		$("#hide_me_controller").html("Learn More");
+	 }
+         return false;
+     });
+});
+	</script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+               <!-- <a href="http://tympanus.net/Tutorials/BlurMenu/"><strong>&laquo; Previous Demo: </strong>Blur Menu</a>
+                <span class="right">
+                    <a href="http://www.justbenicestudio.com/studio/websymbols/" target="_blank">Font/Icons by Just Be Nice</a>
+                    <a href="http://tympanus.net/codrops/2011/10/24/creative-css3-animation-menus/"><strong>Back to the Codrops Article</strong></a>
+                </span>-->
+                <div class="clr"></div>
+            </div>
+	    <div class="top_header">
+             	<!--<h1>Creative CSS3 Animation Menus <span>Experimenting with CSS3 Transitions &amp; Animations</span></h1>-->
+	    </div>
+            <div class="content" id="content">
+
+		<div class="menu_container">
+                <ul class="ca-menu">
+                    <li>
+                        <a id="ca1" href="#">
+                            <span class="ca-icon" id="ca-icon1"></span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Home</h2>
+                                <h3 class="ca-sub">Sweet Home</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="ca2" href="#">
+                            <span class="ca-icon" id="ca-icon2"></span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Perks</h2>
+                                <h3 class="ca-sub">Have a BLAST...</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="ca3" href="#">
+                            <span class="ca-icon" id="ca-icon3"></span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Reach Us</h2>
+                                <h3 class="ca-sub">Find Us Here</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="ca4" href="#">
+                            <span class="ca-icon" id="ca-icon4"></span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Contact Us</h2>
+                                <h3 class="ca-sub">We Are Always Here</h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+		</div>
+                <div class="more" id="desc_div1">
+                   <!-- <ul>
+                        <li><a href="index.html">Example 1</a></li>
+                        <li><a href="index2.html">Example 2</a></li>
+                        <li><a href="index3.html">Example 3</a></li>
+                        <li><a href="index4.html">Example 4</a></li>
+                        <li><a href="index5.html">Example 5</a></li>
+                        <li><a href="index6.html">Example 6</a></li>
+                        <li><a href="index7.html">Example 7</a></li>
+                        <li><a href="index8.html">Example 8</a></li>
+                        <li class="selected"><a href="index9.html">Example 9</a></li>
+                        <li><a href="index10.html">Example 10</a></li>
+                    </ul>-->
+			<div class="inner_more">LIVE, HEAL, BEFRIEND, ENJOY</div>
+<h1><span><p>Paying Guest accommodation in Garia near Kavi Najrul Metro Station is waiting for you with its homely atmosphere along with all modern amenities at a justified cost. <a href="#" id="hide_me_controller" style="color:purple;text-decoration:underline;">Learn More</a></p> <div class="hide_me" id="hide_me">Come, live, explore and let it leave a mark with its hospitality. Our facility is way beyond a mere rented property, PATROX-HOUSE has 30 years of emotion and passion attached to it and been nurtured with mordernization which has made it a perfect blend of new and old era. It surely possesses everything you need or expect and also things beyond your expectation. It is a place where you don't have to adjust according to the atmosphere, rather the atmosphere at home adjusts itself to your personalised needs. <br/> <div style="color:purple">. . . . . .   "Service to others is the rent you pay for your room here on earth."</div> </div>
+			<div class="button">
+				<a href="https://www.google.co.in/maps/place/Patrox+House,+Kamdahari+Rd,+Purbapara,+Kamdahari,+Kolkata,+West+Bengal+700084/@22.4614574,88.3774419,17z/data=!3m1!4b1!4m7!1m4!3m3!1s0x3a0271a3f509f139:0xfd52b55747648bb9!2sPatrox+House,+Kamdahari+Rd,+Purbapara,+Kamdahari,+Kolkata,+West+Bengal+700084!3b1!3m1!1s0x3a0271a3f509f139:0xfd52b55747648bb9" target="_blank">REACH US HERE</a>
+			</div><span></h1>
+                </div>
+                <div class="more" id="desc_div2" style="height:0px;">
+			<a id="event1" href="#">
+				<div class="inner_more">CONVEYANCE</div>
+			</a>
+			<a id="event2" href="#">
+				<div class="inner_more1">NEEDS</div>
+			</a>
+			<a id="event3" href="#">
+				<div class="inner_more2">ENTERTAINMENT</div>
+			</a>
+			<div class="inner_more1">MORE COMING SOON...</div>
+                    <!--<ul>
+                        <li><a href="index.html">Example 1</a></li>
+                        <li><a href="index2.html">Example 2</a></li>
+                        <li><a href="index3.html">Example 3</a></li>
+                        <li><a href="index4.html">Example 4</a></li>
+                        <li><a href="index5.html">Example 5</a></li>
+                        <li><a href="index6.html">Example 6</a></li>
+                        <li><a href="index7.html">Example 7</a></li>
+                        <li><a href="index8.html">Example 8</a></li>
+                        <li class="selected"><a href="index9.html">Example 9</a></li>
+                        <li><a href="index10.html">Example 10</a></li>
+                    </ul>-->
+                </div>
+
+		<div class="more" id="desc_div5">
+			<div class="inner_more">CONVEYANCE</div>
+			<h1><span>
+			Metro Station:<br/>
+			Kavi Najrul Metro Station just 5 minutes walk away.
+<br/>Bus Terminus:<br/>
+ Garia 5-6 no. bus terminus just 5 minutes walk away, buses towards E.M. Bypass just 3 minutes walk away</br>
+ Railways : <br>
+ South Sub-Urban railways is 10 minutes auto ride away.<br>
+By Car:<br/>
+E.M. Bypass connector just 5 minutes drive away, Garia More just 2 minutes drive away, Jadavpur/Tollygunge just 10 minutes drive away.
+</span></h1>
+			<div class="lower_div">
+				<a id="ldiv1" href="#">
+				<div class="lower_div1">
+					CONVEYANCE
+				</div>
+				</a>
+				<a id="ldiv2" href="#">
+				<div class="lower_div2">
+					NEEDS
+				</div>
+				</a>
+				<a id="ldiv3" href="#">
+				<div class="lower_div3">
+					ENTERTAINMENT
+				</div>
+				</a>
+				<a id="ldiv4" href="#">
+				<div class="lower_div4">
+					MORE COMING SOON...
+				</div>
+				</a>
+			</div>
+		</div>
+		<div class="more" id="desc_div6">
+			<div class="inner_more1">NEEDS</div>
+			<h1><span>Schools : <br/>
+			Plenty of Government and Private schools(HS/CBSC/ISC) including Narendrapur Ramkrishna Mission, BD Memorial etc.
+  <br>Colleges:<br/>
+Dinabandhu Andrews Colleg, Jadavpur University, KPC Medical College etc.<br/>
+Hospitals : <br/>
+Peerless, Ruby, Deesan, Genesis, AMRI, KPC etc, 24 hours ambulance,
+Police Station, Fire Brigade Nearby
+</span></h1>
+			<div class="lower_div">
+				<a id="ldiv1" href="#">
+				<div class="lower_div1">
+					CONVEYANCE
+				</div>
+				</a>
+				<a id="ldiv2" href="#">
+				<div class="lower_div2">
+					NEEDS
+				</div>
+				</a>
+				<a id="ldiv3" href="#">
+				<div class="lower_div3">
+					ENTERTAINMENT
+				</div>
+				</a>
+				<a id="ldiv4" href="#">
+				<div class="lower_div4">
+					MORE COMING SOON...
+				</div>
+				</a>
+			</div>
+		</div>
+		<div class="more" id="desc_div7">
+			<div class="inner_more">ENTERTAINMENT</div>
+			<h1><span>
+			24 hours water supply, electricity, convenient cable TV and Internet connections.<br>
+			Shopping :<br>
+			Garia Local Market and Garia Main Market just 3 minutes walk away, Spencers, just 5 minutes drive away, BigBazaar (2) just 10 minutes drive away, Almost all sorts of shops (medicine,electronics,electrical,food) are nearby.<br>
+			Food : <br>
+			Plenty of mid to high range restaurants with home delivery facility are available from 1 to 5 minutes walk away (Aminia, Zeesan, SilverMoon, Bookhara etc).
+
+			<br>Many Gyms and Fitness Centres nearby, 3-4 big playgrounds including one just beside, cultural programmes by local clubs very often.
+			</span></h1>
+			<div class="lower_div">
+				<a id="ldiv1" href="#">
+				<div class="lower_div1">
+					CONVEYANCE
+				</div>
+				</a>
+				<a id="ldiv2" href="#">
+				<div class="lower_div2">
+					NEEDS
+				</div>
+				</a>
+				<a id="ldiv3" href="#">
+				<div class="lower_div3">
+					ENTERTAINMENT
+				</div>
+				</a>
+				<a id="ldiv4" href="#">
+				<div class="lower_div4">
+					MORE COMING SOON...
+				</div>
+				</a>
+			</div>
+		</div>
+
+                <div class="more" id="desc_div3">
+			<div class="inner_more">Reach Us</div>
+			<h1><span><a href="https://www.google.co.in/maps/place/Patrox+House,+Kamdahari+Rd,+Purbapara,+Kamdahari,+Kolkata,+West+Bengal+700084/@22.4614574,88.3774419,17z/data=!3m1!4b1!4m7!1m4!3m3!1s0x3a0271a3f509f139:0xfd52b55747648bb9!2sPatrox+House,+Kamdahari+Rd,+Purbapara,+Kamdahari,+Kolkata,+West+Bengal+700084!3b1!3m1!1s0x3a0271a3f509f139:0xfd52b55747648bb9" style="color:purple" target="_blank">Map Link</a></span></h1>
+                    <!--<ul>
+                        <li><a href="index.html">Example 1</a></li>
+                        <li><a href="index2.html">Example 2</a></li>
+                        <li><a href="index3.html">Example 3</a></li>
+                        <li><a href="index4.html">Example 4</a></li>
+                        <li><a href="index5.html">Example 5</a></li>
+                        <li><a href="index6.html">Example 6</a></li>
+                        <li><a href="index7.html">Example 7</a></li>
+                        <li><a href="index8.html">Example 8</a></li>
+                        <li class="selected"><a href="index9.html">Example 9</a></li>
+                        <li><a href="index10.html">Example 10</a></li>
+                    </ul>-->
+                </div>
+                <div class="more" id="desc_div4">
+			<div class="inner_more">CONTACT US</div>
+			<h1 style="float:left;"><span>For booking suggestions feedback or other queries contact <br/><br/>Gautam Patra<br/><a href="mailto:gaurabpa1992@gmail.com" style="color: purple;">gaurabpa1992@gmail.com</a><br/>Mob. No. : +91-9143454420</span></h1><br/>
+			<h1 style="float:right;"><span>Address<br/><div style="color: purple;">R-135, Kamdohari Purbapara, P.O.: Garia, Kolkata-700084</div><br/>
+			Beside Mitali Sangha Play Ground
+<!--Subhasish Kundu<br/><a href="mailto:skunducst25@students.becs.ac.in" style="color: purple;">skunducst25@students.becs.ac.in</a><br/>Mob. No. : +91-8902267493</span></h1>-->
+
+                </div>
+
+
+
+            </div><!-- content -->
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    </body>
+</html>
